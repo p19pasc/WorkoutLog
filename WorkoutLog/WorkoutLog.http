@@ -5,5 +5,9 @@ GET {{WorkoutLog_HostAddress}}/api/DailyWorkouts
 Accept: application/json
 
 ###
+GET {{WorkoutLog_HostAddress}}/api/DailyWorkout/1
+Accept: application/json
+
+###
 POST {{WorkoutLog_HostAddress}}/api/AddNewDailyWorkout
 Accept: application/json

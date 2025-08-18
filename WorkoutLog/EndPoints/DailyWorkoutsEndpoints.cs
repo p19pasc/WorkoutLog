@@ -26,13 +26,21 @@ public static class DailyWorkoutsEndPoints
         app.MapGet("/api/DailyWorkouts", async (WorkoutLogDbContext db) =>
         {
             var workouts = await db.DailyWorkouts.ToListAsync();
+            if (workouts == null)
+            {
+                return Results.NotFound($"Workouts not found");
+            }
             return Results.Ok(workouts);
         });
 
-          app.MapGet("/api/DailyWorkout/{id}", async (int id, WorkoutLogDbContext db) =>
-        {
-            var workouts = await db.DailyWorkouts.ToListAsync();
-            return Results.Ok(workouts);
-        });
+        app.MapGet("/api/DailyWorkout/{id}", async (int id, WorkoutLogDbContext db) =>
+      {
+          var workout = await db.DailyWorkouts.Include(dw => dw.DailyWorkoutExercises).ThenInclude(dwe => dwe.Exercise).FirstOrDefaultAsync(w => w.Id == id);
+          if (workout == null)
+          {
+              return Results.NotFound($"Workout with ID {id} not found");
+          }
+          return Results.Ok(workout);
+      });
     }
 }

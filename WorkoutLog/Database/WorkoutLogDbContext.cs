@@ -12,7 +12,8 @@ public class WorkoutLogDbContext : DbContext
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     {
         optionsBuilder.UseSqlServer(
-            "Server=THOMAS-NSQS\\SQLEXPRESS;Database=WorkoutLogDb;Trusted_Connection=True;TrustServerCertificate=True;");
+            // THOMAS-NSQS\\SQLEXPRESS
+            "Server=DESKTOP-LDDF8CN;Database=WorkoutLogDb;Trusted_Connection=True;TrustServerCertificate=True;");
     }
 
     public DbSet<DailyWorkout> DailyWorkouts { get; set; }
