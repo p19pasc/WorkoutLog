@@ -162,3 +162,4 @@ C:\ThomasDev\WorkoutLog\WorkoutLog\bin\Debug\net9.0\ru\Microsoft.CodeAnalysis.Wo
 C:\ThomasDev\WorkoutLog\WorkoutLog\bin\Debug\net9.0\tr\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
 C:\ThomasDev\WorkoutLog\WorkoutLog\bin\Debug\net9.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
 C:\ThomasDev\WorkoutLog\WorkoutLog\bin\Debug\net9.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\ThomasDev\WorkoutLog\WorkoutLog\obj\Debug\net9.0\WorkoutLog.sourcelink.json

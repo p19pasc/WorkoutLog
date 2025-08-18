@@ -1,6 +1,9 @@
 @WorkoutLog_HostAddress = http://localhost:5150
 
-GET {{WorkoutLog_HostAddress}}/weatherforecast/
+###
+GET {{WorkoutLog_HostAddress}}/api/DailyWorkouts
 Accept: application/json
 
 ###
+POST {{WorkoutLog_HostAddress}}/api/AddNewDailyWorkout
+Accept: application/json
