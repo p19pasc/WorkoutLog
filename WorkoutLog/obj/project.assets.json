@@ -4744,19 +4744,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\thoma\\.nuget\\packages\\": {}
+    "C:\\Users\\Thomas\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\WorkoutLog\\WorkoutLog\\WorkoutLog\\WorkoutLog.csproj",
+      "projectUniqueName": "C:\\Users\\Thomas\\Desktop\\WorkoutLog\\WorkoutLog\\WorkoutLog.csproj",
       "projectName": "WorkoutLog",
-      "projectPath": "D:\\WorkoutLog\\WorkoutLog\\WorkoutLog\\WorkoutLog.csproj",
-      "packagesPath": "C:\\Users\\thoma\\.nuget\\packages\\",
-      "outputPath": "D:\\WorkoutLog\\WorkoutLog\\WorkoutLog\\obj\\",
+      "projectPath": "C:\\Users\\Thomas\\Desktop\\WorkoutLog\\WorkoutLog\\WorkoutLog.csproj",
+      "packagesPath": "C:\\Users\\Thomas\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Thomas\\Desktop\\WorkoutLog\\WorkoutLog\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\thoma\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\Thomas\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net9.0"
