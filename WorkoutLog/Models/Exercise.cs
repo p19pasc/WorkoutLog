@@ -13,5 +13,5 @@ public class Exercise
     public DateTime UpdatedAt { get; set; }
     public DateTime DeletedAt { get; set; }
     // public List<DailyWorkout> DailyWorkouts { get;} = [];
-    public List<DailyWorkoutExercise> DailyWorkoutExercises { get;} = [];
+    public List<DailyWorkoutExercise> DailyWorkoutExercises { get; set; } = [];
 }

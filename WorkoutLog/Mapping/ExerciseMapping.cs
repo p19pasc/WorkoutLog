@@ -15,7 +15,8 @@ public static class ExerciseMapping
             BodyPart = exercise.BodyPart,
             CreatedAt = exercise.CreatedAt,
             UpdatedAt = exercise.UpdatedAt,
-            DeletedAt = exercise.DeletedAt
+            DeletedAt = exercise.DeletedAt,
+            DailyWorkoutExercises = exercise.DailyExercise.Select(e =>e.ToEntity()).ToList()
         };
     }
 
@@ -27,7 +28,8 @@ public static class ExerciseMapping
             exercise.BodyPart,
             exercise.CreatedAt,
             exercise.UpdatedAt,
-            exercise.DeletedAt
+            exercise.DeletedAt,
+            exercise.DailyWorkoutExercises.Select(e =>e.ToDto()).ToList()
         );
     }
 }

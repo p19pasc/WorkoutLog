@@ -15,6 +15,7 @@ public static class DailyWorkoutExerciseMapping
             Sets = dailyWorkoutExercise.Sets,
             Reps = dailyWorkoutExercise.Reps,
             Weight = dailyWorkoutExercise.Weight
+            
         };
     }
 

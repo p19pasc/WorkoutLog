@@ -3,9 +3,10 @@ namespace WorkoutLog.Dtos;
 public record class DailyWorkoutDto
 (
     int Id, 
-    TimeSpan WorkoutDuration, 
+    int WorkoutDuration, 
     DateTime WorkoutDate, 
     DateTime CreatedAt, 
     DateTime UpdatedAt, 
-    DateTime? DeletedAt
+    DateTime? DeletedAt,
+    List<DailyWorkoutExerciseDto> DailyWorkoutExercises
 );

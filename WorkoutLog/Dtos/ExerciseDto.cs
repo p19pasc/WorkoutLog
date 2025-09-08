@@ -7,5 +7,6 @@ public record class ExerciseDto
     String BodyPart,
     DateTime CreatedAt, 
     DateTime UpdatedAt, 
-    DateTime DeletedAt 
+    DateTime DeletedAt,
+    List<DailyWorkoutExerciseDto> DailyExercise
 ); 

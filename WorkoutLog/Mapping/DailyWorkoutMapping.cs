@@ -15,7 +15,8 @@ public static class DailyWorkoutMapping
             WorkoutDate = dailyWorkout.WorkoutDate,
             CreatedAt = dailyWorkout.CreatedAt,
             UpdatedAt = dailyWorkout.UpdatedAt,
-            DeletedAt = dailyWorkout.DeletedAt
+            DeletedAt = dailyWorkout.DeletedAt,
+            DailyWorkoutExercises = dailyWorkout.DailyWorkoutExercises.Select(e =>e.ToEntity()).ToList()
         };
     }
 
@@ -27,7 +28,8 @@ public static class DailyWorkoutMapping
             dailyWorkout.WorkoutDate,
             dailyWorkout.CreatedAt,
             dailyWorkout.UpdatedAt,
-            dailyWorkout.DeletedAt
+            dailyWorkout.DeletedAt,
+            dailyWorkout.DailyWorkoutExercises.Select(e =>e.ToDto()).ToList()
         );
     }
 }

@@ -13,7 +13,7 @@ public class WorkoutLogDbContext : DbContext
     {
         optionsBuilder.UseSqlServer(
             // THOMAS-NSQS\\SQLEXPRESS
-            "Server=DESKTOP-LDDF8CN;Database=WorkoutLogDb;Trusted_Connection=True;TrustServerCertificate=True;");
+            "Server=THOMAS-NSQS\\SQLEXPRESS;Database=WorkoutLogDb;Trusted_Connection=True;TrustServerCertificate=True;");
     }
 
     public DbSet<DailyWorkout> DailyWorkouts { get; set; }

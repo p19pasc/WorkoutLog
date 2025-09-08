@@ -13,7 +13,7 @@ public static class DailyWorkoutsEndPoints
             var now = DateTime.UtcNow;
             List<DailyWorkout> dailyWorkouts = new List<DailyWorkout>
             {
-                new() {WorkoutDuration = TimeSpan.FromMinutes(60), WorkoutDate = DateTime.Today, CreatedAt = now, UpdatedAt = now},
+                new() {WorkoutDuration = 40, WorkoutDate = DateTime.Today, CreatedAt = now, UpdatedAt = now},
             };
             db.DailyWorkouts.AddRange(dailyWorkouts);
             await db.SaveChangesAsync();
